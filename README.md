@@ -42,3 +42,10 @@ EntrepreneurAI helps students, graduates, and aspiring entrepreneurs discover ta
    docker compose down
    ```
    *(Add `-v` only if you want to wipe the persistent MongoDB volume.)*
+
+## Deploying on Vercel
+
+1. Import this repository into Vercel (framework preset: **Vite**).
+2. Add `GEMINI_API_KEY` (and optionally `JWT_SECRET`) in **Project Settings → Environment Variables**.
+3. Deploy — Vercel automatically builds the static frontend (`dist/`) and mounts the Express backend routes via `/api/*` serverless functions (`vercel.json`). Note: serverless `/tmp` storage is ephemeral across cold starts; for durable production persistence, run with Docker Compose + MongoDB.
+
