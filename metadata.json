@@ -1,0 +1,6 @@
+{
+  "name": "EntrepreneurAI",
+  "description": "AI-powered startup recommendation, financial modeling, and business planning platform for students, graduates, and aspiring entrepreneurs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
